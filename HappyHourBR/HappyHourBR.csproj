@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\production.css" />
+    <None Include="wwwroot\img\archery.jpg" />
+    <None Include="wwwroot\img\cabin.jpg" />
+    <None Include="wwwroot\img\canoeing.jpg" />
+    <None Include="wwwroot\img\facebook.svg" />
+    <None Include="wwwroot\img\fishing.jpg" />
+    <None Include="wwwroot\img\happyhourlogo.ico" />
+    <None Include="wwwroot\img\instagram.svg" />
+    <None Include="wwwroot\img\logo.svg" />
+    <None Include="wwwroot\img\ourmoms.png" />
+    <None Include="wwwroot\img\teepee.jpg" />
+    <None Include="wwwroot\img\twitter.svg" />
+  </ItemGroup>
+
+</Project>
