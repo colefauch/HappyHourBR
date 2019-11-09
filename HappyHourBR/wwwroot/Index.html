@@ -22,14 +22,51 @@
 
 </head>
 
-<body>
+<body onload="dayOfTheWeek()">
+    <script>
+        function dayOfTheWeek() {
+            var d = new Date();
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+            var n = weekday[d.getDay()];
 
-
+            if (n = "Saturday") {
+                document.location.hash = 'Saturday';
+            }
+            else if (n = "Sunday") {
+                document.location.hash = 'Sunday';
+            }
+            else if (n = "Monday") {
+                document.location.hash = 'Monday';
+            }
+            else if (n = "Tuesday") {
+                document.location.hash = 'Tuesday';
+            }
+            else if (n = "Wednesday") {
+                document.location.hash = 'Wednesday';
+            }
+            else if (n = "Thursday") {
+                document.location.hash = 'Thursday';
+            }
+            else {
+                document.location.hash = 'Friday';
+            }
+        }
+    </script>
     <!-- Header -->
-    <header class="pt2 pb1 align--center">
+    <header>
+        <img src="/img/happyhourlogo.png" style="float:left;width:200px;height:200px"/>
         <div class="container">
-            <p>Welcome to</p>
-            <h1>Happy Hour Baton Rouge</h1>
+            <div class="pt2 pb1 align--center">
+                <p>Welcome to</p>
+                <h1>Happy Hour Baton Rouge</h1>
+            </div>
         </div>
     </header>
 
@@ -47,7 +84,7 @@
                     </div>
                 </div>
                 <div class="grid-column span-half pt3 pb3 mobile-m order-2">
-                    <h3>Monday</h3>
+                    <h3 id="Monday">Monday</h3>
                     <p><strong>Olive or Twist</strong> - ALL DAY - $3 Craft Beer, $6 Wine and Cocktails</p>
                     <p><strong>Chimes</strong> - 4PM-7PM - 50% off Oysters and $1 off Draft Beer</p>
                     <p><strong>Rum House</strong> - 3PM-6PM - $3-$6 Cocktail and Beer Specials</p>
@@ -59,7 +96,7 @@
                 </div>
                 <!--Tuesday-->
                 <div class="grid-column span-half pt3 pb3 mobile-m order-4">
-                    <h3>Tuesday</h3>
+                    <h3 id="Tuesday">Tuesday</h3>
                     <p><strong>Olive or Twist</strong> - 11AM-7PM and 11AM-2AM - $3 Craft Beer, $6 Wine and Cocktails</p>
                     <p><strong>Chimes</strong> - 4PM-7PM - 50% off Oysters and $1 off Draft Beer</p>
                     <p><strong>Rum House</strong> - 3PM-6PM - $3-$6 Cocktail and Beer Specials</p>
@@ -81,7 +118,7 @@
                     </div>
                 </div>
                 <div class="grid-column span-half pt3 pb3 mobile-m order-6">
-                    <h3>Wednesday</h3>
+                    <h3 id="Wednesday">Wednesday</h3>
                     <p><strong>Olive or Twist</strong> - 11AM-7PM and 11AM-2AM - $3 Craft Beer, $6 Wine and Cocktails</p>
                     <p><strong>Walk On's</strong> - 5pm-Close - 50% off Entire Menu with Student ID</p>
                     <p><strong>Chimes</strong> - 4PM-7PM - 50% off Oysters and $1 off Draft Beer</p>
@@ -96,7 +133,7 @@
                 </div>
                 <!-- Thursday -->
                 <div class="grid-column span-half pt3 pb3 mobile-m order-8">
-                    <h3>Thursday</h3>
+                    <h3 id="Thursday">Thursday</h3>
                     <p><strong>Olive or Twist</strong> - 11AM-7PM and 11AM-2AM - $3 Craft Beer, $6 Wine and Cocktails</p>
                     <p><strong>Chimes</strong> - 4PM-7PM - 50% off Oysters and $1 off Draft Beer</p>
                     <p><strong>Rum House</strong> - 3PM-6PM - $3-$6 Cocktail and Beer Specials</p>
@@ -118,7 +155,7 @@
                     </div>
                 </div>
                 <div class="grid-column span-half pt3 pb3 mobile-m order-10">
-                    <h3>Friday</h3>
+                    <h3 id="Friday">Friday</h3>
                     <p><strong>Olive or Twist</strong> - 11AM-7PM and 11AM-2AM - $3 Craft Beer, $6 Wine and Cocktails</p>
                     <p><strong>Chimes</strong> - 4PM-7PM - 50% off Oysters and $1 off Draft Beer</p>
                     <p><strong>Rum House</strong> - 3PM-6PM - $3-$6 Cocktail and Beer Specials</p>
@@ -130,7 +167,7 @@
                 </div>
                 <!--Saturday-->
                 <div class="grid-column span-half pt3 pb3 mobile-m order-12">
-                    <h3>Saturday</h3>
+                    <h3 id="Saturday">Saturday</h3>
                     <p><strong>Olive or Twist</strong> - 11AM-7PM and 11AM-2AM - $3 Craft Beer, $6 Wine and Cocktails</p>
                     <p><strong>Caliente</strong> - ALL DAY(LSU Gameday Only) - $15 Domestic Beer Buckets, $20 Imported Beer Buckets, and Free Shot per Person per LSU Score</p>
                     <p><strong>Our Mom's</strong> - 2PM-6PM - 2 for 1 Draft Beer and Specialty Drinks & $12 Beer Buckets ALL DAY</p>
@@ -149,7 +186,7 @@
                     </div>
                 </div>
                 <div class="grid-column span-half pt3 pb3 mobile-m order-14">
-                    <h3>Sunday</h3>
+                    <h3 id="Sunday">Sunday</h3>
                     <p><strong>Olive or Twist</strong> - ALL DAY - $3 Craft Beer, $6 Wine and Cocktails</p>
                     <p><strong>Rum House</strong> - 10AM-1:30PM - Bottomless Brunch(Mimosas and Bloody Marys)</p>
                     <p><strong>Caliente</strong> - ALL DAY - $10 Bottomless Mimosas and Sangrias</p>
