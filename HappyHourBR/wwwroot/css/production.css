@@ -116,6 +116,14 @@ button, input, optgroup, select, textarea {
     margin: 0
 }
 
+
+.responsive {
+    max-height:150px;
+    max-width:150px;
+    width: auto;
+    height: auto;
+}
+
 button, input {
     overflow: visible
 }
