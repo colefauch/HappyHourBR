@@ -26,36 +26,30 @@
     <script>
         function dayOfTheWeek() {
             var d = new Date();
-            var weekday = new Array(7);
-            weekday[0] = "Sunday";
-            weekday[1] = "Monday";
-            weekday[2] = "Tuesday";
-            weekday[3] = "Wednesday";
-            weekday[4] = "Thursday";
-            weekday[5] = "Friday";
-            weekday[6] = "Saturday";
-            var n = weekday[d.getDay()];
+            var n = d.getDay();
 
-            if (n = "Saturday") {
-                document.location.hash = 'Saturday';
-            }
-            else if (n = "Sunday") {
-                document.location.hash = 'Sunday';
-            }
-            else if (n = "Monday") {
-                document.location.hash = 'Monday';
-            }
-            else if (n = "Tuesday") {
-                document.location.hash = 'Tuesday';
-            }
-            else if (n = "Wednesday") {
-                document.location.hash = 'Wednesday';
-            }
-            else if (n = "Thursday") {
-                document.location.hash = 'Thursday';
-            }
-            else {
-                document.location.hash = 'Friday';
+            switch (n) {
+                case n = 0:
+                    document.location.hash = 'Sunday';
+                    break;
+                case n = 1:
+                    document.location.hash = 'Monday';
+                    break;
+                case n = 2:
+                    document.location.hash = 'Tuesday';
+                    break;
+                case n = 3:
+                    document.location.hash = 'Wednesday';
+                    break;
+                case n = 4:
+                    document.location.hash = 'Thursday';
+                    break;
+                case n = 5:
+                    document.location.hash = 'Friday';
+                    break;
+                case n = 6:
+                    document.location.hash = 'Saturday';
+                    break;
             }
         }
     </script>
@@ -204,4 +198,3 @@
     </main>
 </body>
 </html>
-
