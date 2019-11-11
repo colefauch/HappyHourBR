@@ -118,8 +118,8 @@ button, input, optgroup, select, textarea {
 
 
 .responsive {
-    max-height:175px;
-    max-width:175px;
+    max-height:160px;
+    max-width:160px;
     width: auto;
     height: auto;
 }
