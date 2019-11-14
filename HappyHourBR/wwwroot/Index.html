@@ -25,29 +25,30 @@
 <body onload="dayOfTheWeek()">
     <script>
         function dayOfTheWeek() {
-            var d = new Date();
-            var n = d.getDay();
+            var d = new Date(2019,10,12);
+            var x = d.toString();
+            var n = x.substring(0, 3);
 
             switch (n) {
-                case n = 0:
+                case n = "Sun":
                     document.location.hash = 'Sunday';
                     break;
-                case n = 1:
+                case n = "Mon":
                     document.location.hash = 'Monday';
                     break;
-                case n = 2:
+                case n = "Tue":
                     document.location.hash = 'Tuesday';
                     break;
-                case n = 3:
+                case n = "Wed":
                     document.location.hash = 'Wednesday';
                     break;
-                case n = 4:
+                case n = "Thu":
                     document.location.hash = 'Thursday';
                     break;
-                case n = 5:
+                case n = "Fri":
                     document.location.hash = 'Friday';
                     break;
-                case n = 6:
+                case n = "Sat":
                     document.location.hash = 'Saturday';
                     break;
             }
